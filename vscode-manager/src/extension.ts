@@ -12,11 +12,13 @@ export function activate(context: vscode.ExtensionContext) {
                     if (!extension.isActive) {
                         try {
                             api = await extension.activate();
+                            vscode.window.showInformationMessage('extension.activate api: ' + api.title);
                         } catch (error) {
                             console.error(error);
                         }
                     } else {
                         api = extension.exports;
+                        vscode.window.showInformationMessage('extension.exports api: ' + api.title);
                     }
                     return api;
                 }

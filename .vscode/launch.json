@@ -12,11 +12,13 @@
       "runtimeExecutable": "${execPath}",
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}/vscode-manager",
-        "--extensionDevelopmentPath=${workspaceFolder}/vscode-contrib1"
+        "--extensionDevelopmentPath=${workspaceFolder}/vscode-contrib1",
+        "--extensionDevelopmentPath=${workspaceFolder}/vscode-activation-event",
     ],
       "outFiles": [
         "${workspaceFolder/vscode-vscode-manager/out/**/*.js",
-        "${workspaceFolder/vscode-contrib1/out/**/*.js"
+        "${workspaceFolder/vscode-contrib1/out/**/*.js",
+        "${workspaceFolder/vscode-activation-event/out/**/*.js"
       ]
     }
   ]
